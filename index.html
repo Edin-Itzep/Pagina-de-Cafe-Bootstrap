@@ -10,68 +10,256 @@
     <link rel="stylesheet" href="./index.css">
     <title>Coffe and Cream</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-bs-target="#navbarSupportedContent" >
 <!-- Header and Navbar -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav id="header" class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #524336;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">
+          <img class="logo-header-one" src="/img/logo-new.jpg.png" alt="Logo Coffe">
+          <img class="logo-header" src="./img/logo-new-2.jpg.png" alt="Logo Coffe">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 60px;">
+        <ul class="navbar-nav  mb-2 mb-lg-0" >
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#container-title" style="color:wheat;"> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#products-section" style="color:wheat;">Products</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+            <a class="nav-link dropdown-toggle" style="color:wheat; " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <ul class="dropdown-menu"  aria-labelledby="navbarDropdown" >
+              <li><a class="dropdown-item"   href="#event-section">Events</a></li>
+              <li><a class="dropdown-item"   href="#promotions-section">Promociones</a></li>
+              <li><a class="dropdown-item"   href="#">Contactanos</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
+          
         </ul>
         
       </div>
     </div>
   </nav>    
+<!-- header -->
+
+<!-- Main -->
+
+<main id="main">
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-pause="false">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/granos-5.jpg" class="d-block w-100" alt="slides-images">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/granos-2.jpg" class="d-block w-100" alt="slides-images">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/granos-3.jpg" class="d-block w-100" alt="slides-images">
+            </div>
+            </div>
+        
+            <div class="overlay">
+                <div class="container" id="container-title">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-6">
+                            <h1>PROCAFEINACIÓN</h1>
+                            <p>¿Sabias qué? 
+                                <br>
+                                La procafeinación es la tendencia de no empezar nada en tu día a día, <br>
+                                hasta haber tomado café... 
+                                <br> <br>
+                            </p>
+                            <span>Te gustaría una tasa?</span>
+                            <a data-bs-toggle="modal" data-bs-target="#modal-compra" type="button" class="btn btn-success">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+</main>
+<!-- Main -->
     
+<!-- Products -->
+<section class="products" id="products-section">
+<div class="container">
+    <div class="row">
+        <div class="col text-center text-uppercase" >
+            <small>Conoce nuestros <h1>productos</h1></small>
+            
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="./img/producto-1.jpg" style="height: 250px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Capuchino</h5>
+                  <p class="card-text">Preparado con café espresso y leche montada con vapor para darle cremosidad, sin olvidar el toque final de canela o cacao.</p>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="./img/producto-2.jpg" style="height: 250px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Café Negro</h5>
+                  <p class="card-text">Preparado con café de grano, molido,
+                      <br> no podiamos olvidar el sabor de una tasa de licor negro.</p>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="./img/producto-4.jpg" style="height: 250px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nachos Supremos</h5>
+                  <p class="card-text">La mazorca de maíz, la nata con el queso cheddar fundido, los nachos y pimienta negra para dar el sabor picante al plato.</p>
+                  
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Products -->
 
 
+<!-- Events -->
+<section class="event" id="event-section">
+    <div class="container" >
+        <div class="row">
+            <div class="col-12 col-lg-6" style="padding-left: 0; padding-right: 0;" >
+            <img src="./img/event.jpg" alt="Eventos" style="object-fit: contain; width: 100%;">    
+            </div>
+
+            <div class="col-12 col-lg-6" style="background-color: #524336;  color: wheat;">
+                <h1>¿Necesitas organizar un evento?</h1>
+                <br>
+                <p>Eres el encargado de organizar la reunión, pero, 
+                    <br> ¿no sabes como?
+                    <br>
+                    <br> ¡¡¡Nosotros lo hacemos por tí!!!</p>
+                <a style="margin-bottom: 10px;" href="#" class="btn btn-success">Detalles</a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Events -->
+
+
+<!-- Promotions -->
+
+
+<section id="promotions-section" >
+    <div class="container">
+        <div class="row">
+            <div class="col pt-4" style="text-align: center;">  
+                <small class="text-uppercase" >¿Quieres recibir promociones de nuestro <h2>Coffe Shop ?</h2></small>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" style="text-align: center;">  
+                <small class="text-uppercase"  >Envianos tus datos</small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4 pb-3 pt-4">
+              <input type="text" class="form-control" placeholder="Primer Nombre" aria-label="First name">
+            </div>
+            <div class="form-gropu col-md-4 pt-4 pb-3">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+            </div>
+            <div class="form-gropu col-md-4 pt-4 pb-3">
+              <input type="text" class="form-control" placeholder="Correo Electronico" aria-label="Apellido">
+            </div>
+
+        </div>
+
+        <div class="row">
+            
+                <div class="col-md-12 mb-3" style="text-align: center;">
+                  <a type="button" class="btn btn-success" href="">Enviar</a>
+                </div>
+             
+        </div>
 
     
-
+        
+            
+    </div>
+    
+</section>
+<!-- Promotions -->
 <!-- Footer -->
     <footer id="footer" class="pb-4 pt-4">
 
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-3">
-                    <a href="#">Preguntas Frecuentes</a>
+                    <a  style="color: wheat;" href="#">Preguntas Frecuentes</a>
                 </div>
                 <div class="col-12 col-lg-3">
-                    <a href="#">Contactanos</a>
+                    <a  style="color:wheat;" href="#">Contactanos</a>
                 </div>
                 <div class="col-12 col-lg-3">
-                    <a href="#">Facebook</a>
+                    <a  style="color:wheat;" href="#">Facebook</a>
                 </div>
                 <div class="col-12 col-lg-3">
-                    <a href="#">Twitter</a>
+                    <a style="color:wheat;"  href="#">Twitter</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+
+    |<div class="modal" tabindex="-1" id="modal-compra">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Ordenar Pedido</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+
+                <div class="form-row">
+                    <div class="form-group col">
+                        <ul class="list-group">
+                            <li class="list-group-item active" aria-current="true">Café</li>
+                            <li class="list-group-item">Bebidas Frías</li>
+                            <li class="list-group-item">Adicionales al Café</li>
+                            <li class="list-group-item">Snaks</li>
+                            <li class="list-group-item">Degustaciones</li>
+                          </ul>
+
+                    </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-success">Realizar Pedido</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- Modal -->
+      
 
     <!-- Optional JavaScript; choose one of the two! -->
 
